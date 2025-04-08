@@ -1,0 +1,163 @@
+{
+  "halland_food_producers": [
+    {
+      "name": "Ugglarps Grönt",
+      "type": "Gårdsbutik med regenerativ odling",
+      "location": "Ugglarp, Halland",
+      "owners": "Bröderna Mikael Jidenholm och Martin Larsson",
+      "products": ["Färska frukter", "Säsongsbetonade grönsaker", "Vanliga och ovanliga grönsaker"],
+      "specialties": "Fokus på kvalitet, inspiration, kunskap och unika råvaror med full spårbarhet",
+      "hours": "Ons-fre 10-18, lör 10-16, sön 11-15",
+      "website": "www.ugglarpsgront.se",
+      "social_media": {
+        "instagram": "https://www.instagram.com/visitugglarp"
+      },
+      "image_urls": [
+        "Not available in search results"
+      ]
+    },
+    {
+      "name": "Gudmundsgården",
+      "type": "Gårdscharkuteri",
+      "location": "Slöinge, utanför Falkenberg",
+      "established": "Hallands äldsta gårdscharkuteri",
+      "products": ["Korvar", "Kött", "Charkprodukter"],
+      "specialties": "Sveriges största sortiment av egentillverkade charkvaror",
+      "social_media": {
+        "facebook": "https://www.facebook.com/Gudmundsgarden"
+      },
+      "reviews": "4.0/5 på Tripadvisor (30 recensioner)",
+      "facebook_stats": "Över 11,700 följare, 2,047 besöksmarkeringar",
+      "image_urls": [
+        "Not directly available, but can be found on Facebook page: https://www.facebook.com/Gudmundsgarden"
+      ]
+    },
+    {
+      "name": "Hakaslätts Svamp",
+      "official_name": "Hakaslätts Gårdschampinjoner AB",
+      "type": "Svampodling/champinjonodling",
+      "location": "Hakestad 132, Ullared",
+      "established": "Började med champinjonodling 2003",
+      "business_type": "Familjeföretag",
+      "financial": "Omsatte 5,006,000 kr år 2023",
+      "notable": "Kräver daglig skötsel, liknande lantbruk med djur",
+      "social_media": {
+        "facebook": "https://www.facebook.com/hakaslatt"
+      },
+      "facebook_stats": "160 gillningar",
+      "image_urls": [
+        "Not directly available, but can be found on Facebook page: https://www.facebook.com/hakaslatt"
+      ]
+    },
+    {
+      "name": "Thuressons",
+      "type": "Gårdsbutik med charkuteri",
+      "location": "Glommen, nära Varberg & Falkenberg",
+      "slogan": "Hallands största köttdisk",
+      "products": [
+        "Köttlådor", 
+        "Charkprodukter utan tillsatser", 
+        "Rökt skinka", 
+        "Mor Alice leverpastej (vann guld i Svenskt Mathantverk)", 
+        "Thuressons bacon", 
+        "Olika korvar"
+      ],
+      "website": "www.gardsbutikthuresson.se",
+      "social_media": {
+        "facebook": "https://www.facebook.com/gardsbutik.thuresson"
+      },
+      "facebook_stats": "Över 10,700 följare",
+      "image_urls": [
+        "Not directly available in search results"
+      ]
+    },
+    {
+      "name": "Kobb",
+      "type": "Impact- och foodtechbolag",
+      "location": "Glommen, Halland",
+      "business": "Klimatpositiv kommersiell tångodling på västkusten",
+      "products": "Tångprodukter",
+      "notable": [
+        "Tillstånd för odling i Hakefjorden", 
+        "Fokuserar på hållbara, miljövänliga livsmedel från havet"
+      ],
+      "website": "kobb.nu",
+      "image_urls": [
+        "Not directly available in search results, but possibly on their website: https://kobb.nu"
+      ]
+    },
+    {
+      "name": "Korshags",
+      "official_name": "Korshags Food AB",
+      "type": "Livsmedelsproducent med butik",
+      "location": "Servicevägen 3, Falkenberg",
+      "products": [
+        "Nyrökta fiskprodukter", 
+        "Pinfärsk lax", 
+        "Färsk fisk & skaldjur", 
+        "Färdigrätter"
+      ],
+      "sustainability": "Alla fiskprodukter är ASC-märkta eller ekologiskt KRAV-märkta",
+      "contact": {
+        "phone": {
+          "växel": "0346-71 57 57",
+          "butik": "0346-71 57 59"
+        },
+        "email": "info@korshags.se"
+      },
+      "website": "www.korshags.se",
+      "social_media": {
+        "instagram": "https://www.instagram.com/korshags_butiken"
+      },
+      "instagram_stats": "Över 1,800 följare",
+      "image_urls": [
+        "Can be found on Instagram: https://www.instagram.com/korshags_butiken"
+      ]
+    },
+    {
+      "name": "Hallandsbär",
+      "official_name": "Hallands Bär AB",
+      "location_name": "Stora Berg",
+      "type": "Självplock, café, pizzeria, gårdsbutik och vinodling",
+      "location": "Stora Berg 110, 305 75 Getinge",
+      "products": [
+        "Jordgubbar", 
+        "Hallon", 
+        "Blåbär", 
+        "Björnbär", 
+        "Sparris", 
+        "Sallad", 
+        "Rödbetor", 
+        "Vitlök", 
+        "Rödlök", 
+        "Gul lök", 
+        "Schalottenlök", 
+        "Tomater", 
+        "Gurka", 
+        "Blommor"
+      ],
+      "contact": {
+        "email": "info@hallandsbar.se",
+        "phone": "073-252 17 40"
+      },
+      "website": "hallandsbar.se",
+      "image_urls": [
+        "Not directly available in search results, but possibly on their website: https://hallandsbar.se"
+      ]
+    },
+    {
+      "name": "Strandbaden",
+      "official_name": "Falkenberg Strandbad",
+      "type": "Hotell och restaurang",
+      "location": "Skrea strand, Falkenberg, Halland",
+      "facilities": ["3 restauranger", "4 pooler", "Spa"],
+      "services": ["Kroppsskrubb", "Ansiktsbehandlingar", "Massage"],
+      "ratings": "4/5 på Tripadvisor, rankat som #1 av 3 hotell i Falkenberg",
+      "notable": "Beläget direkt vid havet, på dagar med klart väder kan man se Danmark",
+      "travel_info": "Ca 1,5 timme söder om Göteborg och 2 timmar norr om Malmö",
+      "image_urls": [
+        "Can be found on Tripadvisor: https://www.tripadvisor.com/Hotel_Feature-g189888-d227515-zft9165-Falkenberg_Strandbad.html"
+      ]
+    }
+  ]
+}

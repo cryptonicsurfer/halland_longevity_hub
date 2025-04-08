@@ -2,39 +2,67 @@ import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/lib/hooks/use-intersection-observer";
 import { useRef } from "react";
 
-// Falkenberg Culinary Data
-const falkenbergCulinary = {
-  title: "Falkenberg, Sweden: A Hidden Culinary Paradise",
-  description: "Nestled on Sweden's western coast in the Halland region, Falkenberg has emerged as one of Scandinavia's most exciting food destinations. With a perfect blend of coastal influences, traditional Swedish cooking, and modern culinary innovation, the town offers a diverse and vibrant food scene worth experiencing.",
+// Halland Culinary Data
+const hallandCulinary = {
+  title: "Halland, Sweden: A Hidden Culinary Paradise",
+  description: "Nestled on Sweden's western coast, the Halland region has emerged as one of Scandinavia's most exciting food destinations. With a perfect blend of coastal influences, traditional Swedish cooking, organic farming, and modern culinary innovation, the region offers a diverse and vibrant food scene worth experiencing.",
   highlight_quote: "The landscape of Halland, with its rolling hills, grain fields, grazing cattle, deep forests, rivers, and coastline, provides restaurants with a well-stocked pantry of ingredients that are farmed, foraged, and hunted locally.",
-  restaurants: [
+  image_urls: {
+    coastal: "/images/halland-coastal-scenery.jpg",
+    cycling: "/images/kattegattleden-cycling.jpg"
+  },
+  producers: [
     {
-      name: "Lilla Napoli",
-      description: "Often described as 'the best Neapolitan pizza in Scandinavia,' this unassuming pizzeria housed in a wooden shack serves authentic wood-fired pizzas that attract visitors from across the region.",
-      image_url: "https://i0.wp.com/andershusa.com/wp-content/uploads/2017/03/lilla-napoli-authentic-neapolitan-italian-pizza-falkenberg-sweden-scandinavia-restaurant-review-food-foodie-eat-eating-dine-dining-best-tips-guide-travel-2019-27.jpg?ssl=1",
-      specialties: ["Authentic Neapolitan pizza", "Dessert pizza"]
+      name: "Ugglarps Grönt",
+      type: "Gårdsbutik med regenerativ odling",
+      location: "Ugglarp, Halland",
+      owners: "Bröderna Mikael Jidenholm och Martin Larsson",
+      description: "En gårdsbutik som fokuserar på kvalitet, inspiration, kunskap och unika råvaror med full spårbarhet genom regenerativ odling.",
+      products: ["Färska frukter", "Säsongsbetonade grönsaker", "Vanliga och ovanliga grönsaker"],
+      hours: "Ons-fre 10-18, lör 10-16, sön 11-15",
+      website: "www.ugglarpsgront.se"
     },
     {
-      name: "Prostens Pizza",
-      description: "More than just a pizzeria, this countryside retreat offers Roman-style pizzas and a rotating menu of small dishes with seasonal ingredients. Guests can enjoy summer seating overlooking grazing cows and picturesque fields.",
-      image_url: "https://i0.wp.com/andershusa.com/wp-content/uploads/2017/03/lilla-napoli-authentic-neapolitan-italian-pizza-falkenberg-sweden-scandinavia-restaurant-review-food-foodie-eat-eating-dine-dining-best-tips-guide-travel-2016-18.jpg?ssl=1",
-      specialties: ["Roman-style pizza", "Seasonal small plates"]
+      name: "Gudmundsgården",
+      type: "Gårdscharkuteri",
+      location: "Slöinge, utanför Falkenberg",
+      description: "Hallands äldsta gårdscharkuteri med Sveriges största sortiment av egentillverkade charkvaror.",
+      products: ["Korvar", "Kött", "Charkprodukter"],
+      social_media: "facebook.com/Gudmundsgarden"
     },
     {
-      name: "Swerl Coffee Club",
-      description: "A charming coffee project housed in a creamy blue 1972 Mercedes Benz van parked by the beach. They serve specialty coffee from European roasters, gluten-free cakes made with house-milled flours, and American pancakes.",
-      image_url: "https://sprudge.com/wp-content/uploads/2021/10/Swerl-Coffee-Club-4-1197x800.jpg",
-      specialties: ["Specialty coffee", "Gluten-free cakes", "American pancakes"]
+      name: "Korshags",
+      type: "Livsmedelsproducent med butik",
+      location: "Servicevägen 3, Falkenberg",
+      description: "En hållbar fiskproducent med butik. Alla fiskprodukter är ASC-märkta eller ekologiskt KRAV-märkta.",
+      products: ["Nyrökta fiskprodukter", "Pinfärsk lax", "Färsk fisk & skaldjur", "Färdigrätter"],
+      contact: "0346-71 57 57",
+      website: "www.korshags.se"
     },
     {
-      name: "Lis Mejeri",
-      description: "A unique pop-up restaurant in an old dairy farmhouse run by the Blidberg family. Featuring eclectic décor and interactive dining experiences, they serve simple, tasty dishes made from local, seasonal ingredients.",
-      specialties: ["Interactive dining", "Local seasonal ingredients", "Innovative Swedish dishes"]
+      name: "Hallandsbär",
+      type: "Självplock, café, pizzeria, gårdsbutik och vinodling",
+      location: "Stora Berg 110, Getinge",
+      description: "Ett mångsidigt besöksmål som kombinerar självplock av bär och grönsaker med café, pizzeria och gårdsbutik.",
+      products: ["Jordgubbar", "Hallon", "Blåbär", "Sparris", "Ekologiska grönsaker"],
+      contact: "073-252 17 40",
+      website: "hallandsbar.se"
     },
     {
       name: "Falkenberg Strandbad",
-      description: "This beachfront hotel boasts the restaurant 'Köket' serving exceptional food with oceanic views. The spa features a color palette and design reminiscent of a Wes Anderson film, complete with an outdoor pool and orangerie.",
-      specialties: ["Fine dining with ocean views", "Local seafood", "Seasonal menu"]
+      type: "Hotell och restaurang",
+      location: "Skrea strand, Falkenberg",
+      description: "Beläget direkt vid havet med tre restauranger som serverar mat med lokala råvaror. På dagar med klart väder kan man se Danmark.",
+      facilities: ["3 restauranger", "4 pooler", "Spa"],
+      specialties: ["Fine dining med havsutsikt", "Lokala råvaror", "Säsongsbetonad meny"]
+    },
+    {
+      name: "Thuressons",
+      type: "Gårdsbutik med charkuteri",
+      location: "Glommen, nära Varberg & Falkenberg",
+      description: "Känd som 'Hallands största köttdisk' och prisbelönt för sina charkprodukter utan tillsatser.",
+      products: ["Köttlådor", "Rökt skinka", "Mor Alice leverpastej (vann guld i Svenskt Mathantverk)", "Thuressons bacon", "Olika korvar"],
+      website: "www.gardsbutikthuresson.se"
     }
   ]
 };
@@ -43,19 +71,23 @@ const falkenbergCulinary = {
 const culinaryAdvantages = [
   {
     title: "Farm-to-Table Excellence",
-    description: "Local ingredients from the rolling hills, grain fields, and coastline of Halland create a well-stocked pantry for restaurants."
+    description: "Lokala råvaror från de böljande kullarna, sädesfälten och kusten i Halland skapar en välutrustad skafferi för restauranger."
   },
   {
-    title: "Award-Winning Pizzerias",
-    description: "Home to what many consider the best Neapolitan pizza in Scandinavia, attracting food enthusiasts from across Europe."
+    title: "Ekologisk och regenerativ odling",
+    description: "Många lokala producenter använder ekologiska och regenerativa odlingsmetoder, vilket bidrar till både smak och miljömässig hållbarhet."
   },
   {
-    title: "Innovative Dining Concepts",
-    description: "From beach-side coffee in vintage Mercedes vans to pop-up restaurants in old dairy farmhouses, Falkenberg offers unique dining experiences."
+    title: "Havets skafferi",
+    description: "Kustlinjen erbjuder färsk fisk och skaldjur, allt från lokalt odlad och hållbar lax till nyrökt fisk och säsongens fångster."
   },
   {
-    title: "Seasonal & Local Focus",
-    description: "Restaurants emphasize seasonal menus with ingredients that are farmed, foraged, and hunted locally, contributing to health and sustainability."
+    title: "Unika besöksmål",
+    description: "Från självplock av färska bär till gårdsbutiker med charkuterier och restauranger vid havet – Halland erbjuder matupplevelser för alla sinnen."
+  },
+  {
+    title: "Säsongsfokus",
+    description: "Restauranger och producenter betonar säsongsmenyer med ingredienser som odlas, plockas och jagas lokalt, vilket bidrar till hälsa och hållbarhet."
   }
 ];
 
@@ -87,12 +119,37 @@ export function FoodNatureSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">{falkenbergCulinary.title}</h2>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">{hallandCulinary.title}</h2>
           <p className="text-lg text-neutral-600">
-            {falkenbergCulinary.description}
+            {hallandCulinary.description}
           </p>
         </motion.div>
         
+        {/* Featured Images */}
+        <motion.div
+          className="mb-16 relative"
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="h-80 rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src={hallandCulinary.image_urls.coastal} 
+                alt="Coastal scenery in Halland, Sweden" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="h-80 rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src={hallandCulinary.image_urls.cycling} 
+                alt="Cycling on Kattegattleden in Halland, Sweden" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </motion.div>
+
         {/* Highlight Quote */}
         <motion.div
           className="mb-16 max-w-4xl mx-auto bg-primary/5 p-8 rounded-lg border-l-4 border-accent"
@@ -101,11 +158,11 @@ export function FoodNatureSection() {
           transition={{ duration: 0.8 }}
         >
           <p className="text-lg md:text-xl italic text-primary font-medium leading-relaxed">
-            "{falkenbergCulinary.highlight_quote}"
+            "{hallandCulinary.highlight_quote}"
           </p>
         </motion.div>
         
-        {/* Top Restaurants */}
+        {/* Top Producers */}
         <motion.div
           className="mb-20"
           variants={containerVariants}
@@ -113,36 +170,29 @@ export function FoodNatureSection() {
           animate={isInView ? "visible" : "hidden"}
         >
           <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
-            Culinary Highlights
+            Halland's Food Producers
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {falkenbergCulinary.restaurants.slice(0, 3).map((restaurant, index) => (
+            {hallandCulinary.producers.slice(0, 3).map((producer, index) => (
               <motion.div
                 key={index}
                 className="bg-white rounded-lg shadow-md overflow-hidden"
                 variants={itemVariants}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
-                {restaurant.image_url && (
-                  <div className="h-48 overflow-hidden">
-                    <img 
-                      src={restaurant.image_url} 
-                      alt={restaurant.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                )}
                 <div className="p-6">
-                  <h4 className="font-heading font-bold text-xl text-primary mb-2">{restaurant.name}</h4>
-                  <p className="text-neutral-600 mb-4">{restaurant.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {restaurant.specialties.map((specialty, i) => (
+                  <span className="text-xs font-medium text-accent uppercase tracking-wider">{producer.type}</span>
+                  <h4 className="font-heading font-bold text-xl text-primary mt-1 mb-2">{producer.name}</h4>
+                  <p className="text-neutral-600 mb-3 text-sm">{producer.location}</p>
+                  <p className="text-neutral-600 mb-4">{producer.description}</p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {producer.products && producer.products.slice(0, 3).map((product, i) => (
                       <span 
                         key={i} 
                         className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium"
                       >
-                        {specialty}
+                        {product}
                       </span>
                     ))}
                   </div>
@@ -160,9 +210,9 @@ export function FoodNatureSection() {
           animate={isInView ? "visible" : "hidden"}
         >
           <motion.div className="md:order-2" variants={itemVariants}>
-            <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-6">The Falkenberg Food Experience</h3>
+            <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-6">The Halland Food Experience</h3>
             <p className="text-lg mb-6 leading-relaxed">
-              What makes Falkenberg's food scene unique is not just the quality of ingredients, but the innovative dining concepts and dedication to tradition that create memorable experiences:
+              What makes Halland's food scene unique is not just the quality of ingredients, but the innovative food producers and dedication to tradition that create memorable experiences:
             </p>
             
             <motion.div 
@@ -213,15 +263,15 @@ export function FoodNatureSection() {
               <div className="space-y-4">
                 <div className="rounded-lg overflow-hidden shadow-md h-56">
                   <img 
-                    src={falkenbergCulinary.restaurants[0].image_url} 
-                    alt={falkenbergCulinary.restaurants[0].name} 
+                    src="/images/halland-coastal-scenery.jpg" 
+                    alt="Coastal scenery in Halland" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-md h-40">
                   <img 
-                    src={falkenbergCulinary.restaurants[2].image_url} 
-                    alt={falkenbergCulinary.restaurants[2].name} 
+                    src="https://images.unsplash.com/photo-1611072172377-0cabc3addb30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Traditional Nordic food" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -236,9 +286,9 @@ export function FoodNatureSection() {
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-md h-56">
                   <img 
-                    src={falkenbergCulinary.restaurants[1].image_url} 
-                    alt={falkenbergCulinary.restaurants[1].name} 
-                    className="w-full h-full object-cover"
+                    src="/images/kattegattleden-cycling.jpg" 
+                    alt="Cycling in Halland" 
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                   />
                 </div>
               </div>
