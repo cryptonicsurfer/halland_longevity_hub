@@ -34,7 +34,7 @@ export function HeroSection() {
         >
           <a 
             href="#vision" 
-            className="bg-accent hover:bg-accent/80 text-white px-8 py-3 rounded-sm transition-all duration-300 font-medium"
+            className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-sm transition-all duration-300 font-medium"
           >
             Discover Our Vision
           </a>
