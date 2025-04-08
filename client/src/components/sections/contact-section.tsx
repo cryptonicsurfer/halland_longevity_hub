@@ -105,8 +105,8 @@ export function ContactSection() {
             variants={itemVariants}
           >
             <div className="grid grid-cols-1 lg:grid-cols-5">
-              <div className="lg:col-span-2 bg-secondary p-8 text-white">
-                <h3 className="font-heading text-2xl font-bold mb-6">Get in Touch</h3>
+              <div className="lg:col-span-2 bg-primary p-8 text-white">
+                <h3 className="font-heading text-2xl font-bold mb-6 text-white">Get in Touch</h3>
                 
                 <div className="space-y-6">
                   <div className="flex items-start">
@@ -114,8 +114,8 @@ export function ContactSection() {
                       <FaMapMarkerAlt className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg">Visit Us</h4>
-                      <p className="mt-1 text-white/80">Falkenberg Longevity Hub<br />Strandvägen 45<br />311 37 Falkenberg, Sweden</p>
+                      <h4 className="font-semibold text-lg text-white">Visit Us</h4>
+                      <p className="mt-1 text-white">Falkenberg Longevity Hub<br />Strandvägen 45<br />311 37 Falkenberg, Sweden</p>
                     </div>
                   </div>
                   
@@ -124,8 +124,8 @@ export function ContactSection() {
                       <FaEnvelope className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg">Email Us</h4>
-                      <p className="mt-1 text-white/80">info@hallandlongevity.se<br />partnerships@hallandlongevity.se</p>
+                      <h4 className="font-semibold text-lg text-white">Email Us</h4>
+                      <p className="mt-1 text-white">info@hallandlongevity.se<br />partnerships@hallandlongevity.se</p>
                     </div>
                   </div>
                   
@@ -134,14 +134,14 @@ export function ContactSection() {
                       <FaPhone className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg">Call Us</h4>
-                      <p className="mt-1 text-white/80">+46 346 88 61 00</p>
+                      <h4 className="font-semibold text-lg text-white">Call Us</h4>
+                      <p className="mt-1 text-white">+46 346 88 61 00</p>
                     </div>
                   </div>
                 </div>
                 
                 <div className="mt-12">
-                  <h4 className="font-semibold text-lg mb-4">Follow Us</h4>
+                  <h4 className="font-semibold text-lg mb-4 text-white">Follow Us</h4>
                   <div className="flex space-x-4">
                     <a href="#" className="text-white hover:text-accent transition-colors duration-300">
                       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
