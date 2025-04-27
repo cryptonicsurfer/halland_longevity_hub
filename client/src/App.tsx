@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 import { motion, AnimatePresence } from "framer-motion";
+import { ThemeProvider } from "@/lib/theme-context";
 
 function Router() {
   return (
@@ -19,10 +20,14 @@ function Router() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Router />
-      <Toaster />
-    </QueryClientProvider>
+    <ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+          <Router />
+        </div>
+        <Toaster />
+      </QueryClientProvider>
+    </ThemeProvider>
   );
 }
 

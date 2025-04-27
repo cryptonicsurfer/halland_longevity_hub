@@ -1,13 +1,19 @@
-import { VideoBackground } from "@/components/ui/video-background";
 import { motion } from "framer-motion";
 
 export function HeroSection() {
-  // This video URL should be replaced with an actual video URL in production
-  const videoSrc = "https://cdn.videvo.net/videvo_files/video/premium/video0042/large_watermarked/900-2_900-6334-PD2_preview.mp4";
-
   return (
-    <section id="hero">
-      <VideoBackground videoSrc={videoSrc}>
+    <section id="hero" className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+      {/* Background Image */}
+      <img 
+        src="/images/longevity_option_1.webp" 
+        alt="Coastal landscape of Halland, Sweden" 
+        className="absolute inset-0 w-full h-full object-cover z-0" 
+      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
+
+      {/* Content */}
+      <div className="relative z-20 p-4">
         <motion.h1 
           className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-wide max-w-5xl"
           initial={{ opacity: 0, y: 20 }}
@@ -62,7 +68,7 @@ export function HeroSection() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </motion.svg>
         </motion.div>
-      </VideoBackground>
+      </div> {/* Close Content div */}
     </section>
   );
 }

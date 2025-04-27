@@ -17,8 +17,8 @@ const newsItems: NewsItem[] = [
     id: 1,
     title: "International Longevity Symposium to be Hosted in Falkenberg",
     excerpt: "World-renowned researchers and culinary experts will gather to explore the intersection of nutrition and longevity.",
-    imageUrl: "https://images.unsplash.com/photo-1513868524407-6e1c3b4df9c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    imageAlt: "International chefs and scientists gathering at food symposium",
+    imageUrl: "/images/1700175473082.jpeg",
+    imageAlt: "People attending the International Longevity Symposium",
     date: "September 15, 2023",
     category: "Events"
   },
@@ -35,8 +35,8 @@ const newsItems: NewsItem[] = [
     id: 3,
     title: "Construction Begins on Falkenberg Wellness Tourism Center",
     excerpt: "The state-of-the-art facility will welcome health-conscious visitors from around the world starting next summer.",
-    imageUrl: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Modern wellness center architectural rendering",
+    imageUrl: "/images/Wakame-Seaweed-Salad_A.jpg",
+    imageAlt: "Fresh vegetables and ingredients for healthy cooking",
     date: "August 10, 2023",
     category: "Development"
   }
@@ -62,7 +62,7 @@ export function NewsSection() {
   };
 
   return (
-    <section id="news" className="py-20 md:py-32 bg-neutral-100" ref={ref}>
+    <section id="news" className="py-20 md:py-32 bg-muted" ref={ref}>
       <div className="container mx-auto px-4 md:px-8">
         <motion.div 
           className="flex flex-wrap items-center justify-between mb-16"
@@ -80,7 +80,7 @@ export function NewsSection() {
               Latest News & Insights
             </motion.h2>
             <motion.p 
-              className="text-lg text-neutral-600 max-w-xl"
+              className="text-lg text-muted-foreground max-w-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -113,7 +113,7 @@ export function NewsSection() {
           {newsItems.map((item, index) => (
             <motion.div 
               key={item.id}
-              className="bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg"
+              className="bg-card text-card-foreground rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg"
               variants={itemVariants}
               whileHover={{ y: -10 }}
             >
@@ -125,13 +125,13 @@ export function NewsSection() {
                 />
               </div>
               <div className="p-6">
-                <div className="flex items-center text-sm text-neutral-500 mb-3">
+                <div className="flex items-center text-sm text-muted-foreground mb-3">
                   <span>{item.date}</span>
                   <span className="mx-2">•</span>
                   <span>{item.category}</span>
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-primary mb-3">{item.title}</h3>
-                <p className="text-neutral-600 mb-4">{item.excerpt}</p>
+                <p className="text-card-foreground mb-4">{item.excerpt}</p>
                 <a href="#" className="inline-flex items-center text-accent hover:text-secondary transition-colors duration-300">
                   <span className="font-medium">Read more</span>
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

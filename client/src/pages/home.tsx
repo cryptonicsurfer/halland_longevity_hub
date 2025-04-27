@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { ThemeTransitionWrapper } from "@/components/ui/theme-transition-wrapper";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { HeroSection } from "@/components/sections/hero-section";
@@ -48,7 +49,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen font-body text-neutral-900 bg-neutral-100 overflow-x-hidden"
+      className="overflow-x-hidden"
     >
       <Navbar />
       

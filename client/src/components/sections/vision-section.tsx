@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/lib/hooks/use-intersection-observer";
 import { useRef } from "react";
+import LifeExpectancyAnimation from "@/components/life-expectancy-animation"; // Import the animation component
 
 export function VisionSection() {
   const ref = useRef<HTMLDivElement>(null);
@@ -30,7 +31,8 @@ export function VisionSection() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          <motion.div className="md:w-1/2 mb-10 md:mb-0" variants={itemVariants}>
+          {/* Change width to 1/3 on medium screens and up */}
+          <motion.div className="md:w-1/3 mb-10 md:mb-0" variants={itemVariants}> 
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
               Our Vision for Long, Vibrant Lives
             </h2>
@@ -53,19 +55,24 @@ export function VisionSection() {
             </div>
           </motion.div>
 
-          <motion.div className="md:w-1/2" variants={itemVariants}>
-            <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1486984008692-13438c5510c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80" 
-                alt="Coastal landscape of Halland, Sweden" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-primary/10"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-primary/80 to-transparent">
-                <p className="text-white font-accent text-2xl italic">
-                  "Halland doesn't just have the highest life expectancy in Sweden - it offers a blueprint for living well."
-                </p>
-              </div>
+          {/* Replace image div with animation component and background */}
+          {/* Change width to 2/3 on medium screens and up */}
+          <motion.div 
+            className="md:w-2/3 relative rounded-lg overflow-hidden shadow-lg" 
+            variants={itemVariants}
+            style={{ 
+              backgroundImage: `url('/images/animation_background_image_3.jpg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              minHeight: '600px' // Adjust height as needed for the animation content
+            }}
+          >
+            {/* Overlay to potentially improve text readability over background */}
+            <div className="absolute inset-0 bg-black/20 z-0"></div> 
+            
+            {/* Animation Component */}
+            <div className="relative z-10"> {/* Ensure animation is above overlay */}
+              <LifeExpectancyAnimation />
             </div>
           </motion.div>
         </motion.div>

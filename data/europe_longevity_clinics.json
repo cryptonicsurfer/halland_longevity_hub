@@ -1,0 +1,200 @@
+{
+  "longevity_clinics": [
+    {
+      "country": "United Kingdom",
+      "clinics": [
+        {
+          "name": "HOOKE London",
+          "location": "London",
+          "management": ["Kate Woolhouse (CEO)", "Lev Mikheev (Founder)"],
+          "price_range": "€8,550 - €63,000",
+          "focus": "Comprehensive longevity assessments and personalized interventions",
+          "website": null
+        },
+        {
+          "name": "Longevity Clinic UK",
+          "location": "London",
+          "management": null,
+          "price_range": null,
+          "focus": "Age-related biomarker testing, personalized treatment plans",
+          "website": "longevity-clinic.co.uk"
+        },
+        {
+          "name": "Surrenne at The Emory",
+          "location": "Belgravia, London",
+          "management": null,
+          "price_range": null,
+          "focus": "Luxury members' club focused on wellness and longevity",
+          "opened": "April 2024",
+          "website": null
+        },
+        {
+          "name": "Human Regeneration",
+          "location": "London",
+          "management": null,
+          "price_range": null,
+          "focus": "Cell therapy, regenerative medicine, and advanced diagnostics",
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "Switzerland",
+      "clinics": [
+        {
+          "name": "Clinique La Prairie",
+          "location": "Montreux",
+          "established": 1931,
+          "focus": "Pioneering the cellular therapy approach to longevity",
+          "services": ["Revitalization", "better aging", "medical check-ups", "wellness"],
+          "website": "cliniquelaprairie.com"
+        },
+        {
+          "name": "Longevity Center",
+          "location": "Zurich",
+          "management": ["Joanna Bensz (co-founder, CEO)", "Prince Michael of Liechtenstein"],
+          "focus": "Preventive medicine, biological age testing",
+          "website": null
+        },
+        {
+          "name": "The Kusnacht Practice",
+          "location": "Zurich (private villas on Lake Zurich)",
+          "clientele": "Royalty, celebrities, business leaders",
+          "focus": "Ultra-private luxury care with medical excellence",
+          "website": null
+        },
+        {
+          "name": "Nescens Clinique de Genolier",
+          "location": "Genolier",
+          "services": ["Medical spa", "preventive medicine", "aesthetic medicine"],
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "Spain",
+      "clinics": [
+        {
+          "name": "SHA Wellness Clinic",
+          "location": "Alicante",
+          "focus": "Integrative medicine combining Eastern and Western approaches",
+          "programs": ["Weight loss", "sleep recovery", "detox", "stress management"],
+          "website": null
+        },
+        {
+          "name": "LifeVit Clinic",
+          "location": "Madrid",
+          "services": ["Cellular medicine", "preventive care", "hormone therapy"],
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "clinics": [
+        {
+          "name": "Lanserhof Tegernsee",
+          "location": "Tegernsee, Bavaria",
+          "approach": "LANS Med Concept combining natural healing with modern medicine",
+          "website": null
+        },
+        {
+          "name": "Preventicum",
+          "location": "Munich",
+          "focus": "Early detection and prevention of age-related diseases",
+          "website": null
+        },
+        {
+          "name": "Villa Stéphanie at Brenners Park-Hotel & Spa",
+          "location": "Baden-Baden",
+          "services": ["Detox", "nutrition", "emotional balance", "medical care"],
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "France",
+      "clinics": [
+        {
+          "name": "Vichy Celestins Spa Hôtel",
+          "location": "Vichy",
+          "focus": "Thermal treatments, nutrition, and medical expertise",
+          "website": null
+        },
+        {
+          "name": "La Réserve Genève's Nescens Spa",
+          "location": "Paris",
+          "services": ["Better-aging programs", "cosmetic medicine"],
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "Poland",
+      "clinics": [
+        {
+          "name": "Longevity Center",
+          "location": "Warsaw",
+          "note": "Connected to the Zurich branch",
+          "services": "Similar to the Zurich location with customized programs",
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "Austria",
+      "clinics": [
+        {
+          "name": "Lanserhof Lans",
+          "location": "Lans, near Innsbruck",
+          "services": ["Detox", "energy medicine", "regeneration"],
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "Italy",
+      "clinics": [
+        {
+          "name": "Palace Merano",
+          "location": "Merano",
+          "approach": "Revital method focusing on detox and energy restoration",
+          "website": null
+        },
+        {
+          "name": "Lefay Resort & SPA Lago di Garda",
+          "location": "Lake Garda",
+          "focus": "Chinese medicine integrated with Western scientific research",
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "Portugal",
+      "clinics": [
+        {
+          "name": "Longevity Health & Wellness Hotel",
+          "location": "Alvor, Algarve",
+          "services": ["Detox", "weight loss", "stress management", "anti-aging programs"],
+          "website": null
+        }
+      ]
+    },
+    {
+      "country": "Greece",
+      "clinics": [
+        {
+          "name": "Euphoria Retreat",
+          "location": "Mystras",
+          "approach": "Holistic wellness combining Greek and Chinese healing traditions",
+          "website": null
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "last_updated": "April 8, 2025",
+    "source": "Compiled from various online sources",
+    "note": "This list may not be exhaustive and new clinics may have opened since compilation"
+  }
+}

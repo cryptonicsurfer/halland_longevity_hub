@@ -22,10 +22,10 @@ export function ParallaxQuote() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-white font-accent text-2xl md:text-4xl italic leading-relaxed">
+          <p className="text-primary font-accent text-2xl md:text-4xl italic leading-relaxed">
             "The secret to longevity isn't medical breakthroughs alone—it's the connection between what we eat, how we move, and where we live."
           </p>
-          <p className="mt-6 text-white text-lg">Dr. Maria Lindström, Longevity Researcher</p>
+          <p className="mt-6 text-primary text-lg">Dr. Maria Lindström, Longevity Researcher</p>
         </motion.div>
       </div>
     </section>

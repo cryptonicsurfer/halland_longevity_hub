@@ -54,7 +54,7 @@ export function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="py-20 md:py-32 bg-white" ref={ref}>
+    <section id="projects" className="py-20 md:py-32 bg-background" ref={ref}>
       <div className="container mx-auto px-4 md:px-8">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-16"
@@ -63,7 +63,7 @@ export function ProjectsSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">Pioneering Projects</h2>
-          <p className="text-lg text-neutral-600">
+          <p className="text-lg text-foreground/80">
             Discover how we're building the future of longevity through innovative initiatives that bridge culinary excellence, preventative healthcare, and sustainable living.
           </p>
         </motion.div>

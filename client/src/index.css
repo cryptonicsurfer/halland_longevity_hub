@@ -2,12 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: 0 0% 100%; /* White */
+  --foreground: 0 0% 3.9%; /* Almost Black */
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+  --primary: 193 97% 23%; /* From theme.json */
+  --primary-foreground: 0 0% 98%; /* Almost White */
+  --secondary: 0 0% 96.1%; /* Light Gray */
+  --secondary-foreground: 0 0% 9%; /* Dark Gray */
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%; /* Medium Gray */
+  --accent: 0 0% 94.1%; /* Lighter Gray */
+  --accent-foreground: 0 0% 9%;
+  --destructive: 0 84.2% 60.2%; /* Red */
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 89.8%; /* Gray Border */
+  --input: 0 0% 89.8%;
+  --ring: 193 97% 23%; /* Primary color for focus rings */
+  --radius: 0.5rem; /* From theme.json */
+
+  /* Chart Colors (Example) */
+  --chart-1: 220 80% 60%;
+  --chart-2: 160 70% 50%;
+  --chart-3: 40 90% 60%;
+  --chart-4: 280 75% 65%;
+  --chart-5: 0 70% 60%;
+
+  /* Sidebar Colors (Example - assuming similar to main) */
+  --sidebar-background: 0 0% 98%; /* Slightly off-white */
+  --sidebar-foreground: 0 0% 9%;
+  --sidebar-primary: 193 97% 23%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 0 0% 94.1%;
+  --sidebar-accent-foreground: 0 0% 9%;
+  --sidebar-border: 0 0% 89.8%;
+  --sidebar-ring: 193 97% 23%;
+}
+
+.dark {
+  /* Blue/Teal Dark Mode Color Scheme */
+  --background: 200 30% 10%; /* Dark blue background */
+  --foreground: 210 40% 98%; /* Light text on dark background */
+  --card: 200 25% 15%; /* Slightly lighter than background */
+  --card-foreground: 0 0% 98%;
+  --popover: 200 25% 15%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 185 70% 40%; /* Teal primary color */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 195 40% 20%; /* Dark blue-green */
+  --secondary-foreground: 0 0% 98%;
+  --muted: 195 20% 20%;
+  --muted-foreground: 195 10% 70%;
+  --accent: 30 90% 55%; /* Keep the accent orange but adjust for dark mode */
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 70% 45%; /* Darker red for dark mode */
+  --destructive-foreground: 0 0% 98%;
+  --border: 195 25% 25%; /* Dark border */
+  --input: 195 25% 25%;
+  --ring: 185 70% 40%; /* Match primary */
+
+  /* Chart Colors */
+  --chart-1: 185 80% 60%;
+  --chart-2: 160 70% 50%;
+  --chart-3: 30 90% 60%;
+  --chart-4: 280 75% 65%;
+  --chart-5: 0 70% 60%;
+
+  /* Sidebar Colors */
+  --sidebar-background: 200 25% 15%;
+  --sidebar-foreground: 210 40% 98%;
+  --sidebar-primary: 185 70% 40%;
+  --sidebar-primary-foreground: 210 40% 98%;
+  --sidebar-accent: 195 20% 20%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 195 25% 25%;
+  --sidebar-ring: 185 70% 40%;
+}
+
+
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased bg-background text-foreground transition-colors duration-300;
   }
 }

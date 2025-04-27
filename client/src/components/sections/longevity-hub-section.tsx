@@ -85,7 +85,7 @@ export function LongevityHubSection() {
   };
 
   return (
-    <section id="longevity-hub" className="py-20 md:py-32 bg-neutral-100" ref={ref}>
+    <section id="longevity-hub" className="py-20 md:py-32 bg-muted" ref={ref}>
       <div className="container mx-auto px-4 md:px-8">
         <motion.div 
           className="flex flex-col lg:flex-row lg:items-center lg:space-x-16"
@@ -97,12 +97,36 @@ export function LongevityHubSection() {
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
               The Falkenberg Longevity Hub
             </h2>
-            <p className="text-lg mb-6 leading-relaxed">
+            <p className="text-lg mb-6 leading-relaxed text-foreground">
               At the heart of our vision is the Falkenberg Longevity Hub, a groundbreaking center where visitors can experience the interconnection of nutrition, movement, nature, and community.
             </p>
-            <p className="text-lg mb-8 leading-relaxed">
+            <p className="text-lg mb-8 leading-relaxed text-foreground">
               The hub features research facilities, culinary innovation spaces, health assessment centers, and immersive educational programs—all designed to explore and share the secrets of Halland's extraordinary longevity.
             </p>
+
+            <div className="bg-card p-6 rounded-lg border-l-4 border-accent mb-8 text-card-foreground">
+              <h3 className="font-heading text-2xl font-bold text-primary mb-4">Halland's Longevity in Numbers</h3>
+              <p className="mb-2">Halland has the highest life expectancy in Sweden:</p>
+              <ul className="list-disc list-inside mb-4">
+                <li><strong>Overall:</strong> 84.03 years (2019-2023)</li>
+                <li><strong>Men:</strong> 82.52 years</li>
+                <li><strong>Women:</strong> 85.53 years</li>
+                <li><strong>Rank:</strong> #1 out of 21 Swedish counties</li>
+              </ul>
+              <p className="mb-2">Compared to European and global data:</p>
+              <ul className="list-disc list-inside mb-4">
+                <li><strong>South Sweden (Eurostat 2022):</strong> 82.7 years</li>
+                <li><strong>South Sweden (Global Data Lab 2022):</strong> 83.04 years</li>
+              </ul>
+              <p className="mb-4">Halland's longevity rivals the world's famous Blue Zones:</p>
+              <ul className="list-disc list-inside">
+                <li><strong>Okinawa, Japan:</strong> Known for longest-living women, ~84-86 years</li>
+                <li><strong>Sardinia, Italy:</strong> Exceptional male longevity, ~82+ years</li>
+                <li><strong>Ikaria, Greece:</strong> 8 years longer than US average</li>
+                <li><strong>Nicoya, Costa Rica:</strong> 20% lower mortality than rest of Costa Rica</li>
+                <li><strong>Loma Linda, USA:</strong> 7-10 years longer than US average</li>
+              </ul>
+            </div>
             
             <motion.div 
               className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8"
@@ -111,7 +135,7 @@ export function LongevityHubSection() {
               {hubFeatures.map((feature, index) => (
                 <motion.div 
                   key={index} 
-                  className="bg-white p-6 rounded-lg shadow-sm"
+                  className="bg-card p-6 rounded-lg shadow-sm text-card-foreground"
                   variants={itemVariants}
                   whileHover={{ y: -5 }}
                 >
@@ -130,8 +154,8 @@ export function LongevityHubSection() {
             <div className="relative h-[600px] rounded-lg overflow-hidden shadow-lg">
               <div className="absolute inset-0 bg-primary/10 z-10"></div>
               <img 
-                src="https://images.unsplash.com/photo-1603468620905-8de7d86b781e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80" 
-                alt="Aerial view of Falkenberg, Halland" 
+                src="/images/longevity_option_2.webp" 
+                alt="Falkenberg Longevity Hub concept image" 
                 className="w-full h-full object-cover"
               />
                  
@@ -147,7 +171,7 @@ export function LongevityHubSection() {
               </div>
               
               {/* Map Controls */}
-              <div className="absolute bottom-4 right-4 z-30 bg-white/90 p-2 rounded-lg shadow-md flex space-x-2">
+              <div className="absolute bottom-4 right-4 z-30 bg-card/90 p-2 rounded-lg shadow-md flex space-x-2 text-foreground">
                 <button className="p-1 hover:text-accent transition-colors duration-300" aria-label="Zoom in">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>

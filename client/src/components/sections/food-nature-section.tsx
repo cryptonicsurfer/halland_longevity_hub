@@ -2,67 +2,92 @@ import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/lib/hooks/use-intersection-observer";
 import { useRef } from "react";
 
-// Halland Culinary Data
 const hallandCulinary = {
   title: "Halland, Sweden: A Hidden Culinary Paradise",
-  description: "Nestled on Sweden's western coast, the Halland region has emerged as one of Scandinavia's most exciting food destinations. With a perfect blend of coastal influences, traditional Swedish cooking, organic farming, and modern culinary innovation, the region offers a diverse and vibrant food scene worth experiencing.",
-  highlight_quote: "The landscape of Halland, with its rolling hills, grain fields, grazing cattle, deep forests, rivers, and coastline, provides restaurants with a well-stocked pantry of ingredients that are farmed, foraged, and hunted locally.",
+  description: "Halland, on Sweden's western coast, boasts a rich culinary tradition inspired by its diverse geography—coastal seafood, agricultural produce, and forest forage. Falkenberg stands out as a hidden gem within the region, offering everything from casual beachside dining to high-end restaurants with ocean views.",
+  highlight_quote: "The landscape of Halland—with its coast, rolling hills, forests, and fields—provides a pantry of fresh seafood, quality meats, seasonal vegetables, and foraged delicacies.",
   image_urls: {
-    coastal: "/images/halland-coastal-scenery.jpg",
-    cycling: "/images/kattegattleden-cycling.jpg"
+    coastal: "/images/455a4418_CMSTemplate.webp",
+    cycling: "/images/kattegattleden_Magnus-Andersson-RegionHalland_CMSTemplate.webp"
   },
   producers: [
     {
       name: "Ugglarps Grönt",
-      type: "Gårdsbutik med regenerativ odling",
+      type: "Farm shop with regenerative farming",
       location: "Ugglarp, Halland",
-      owners: "Bröderna Mikael Jidenholm och Martin Larsson",
-      description: "En gårdsbutik som fokuserar på kvalitet, inspiration, kunskap och unika råvaror med full spårbarhet genom regenerativ odling.",
-      products: ["Färska frukter", "Säsongsbetonade grönsaker", "Vanliga och ovanliga grönsaker"],
-      hours: "Ons-fre 10-18, lör 10-16, sön 11-15",
-      website: "www.ugglarpsgront.se"
+      owners: "Brothers Mikael Jidenholm and Martin Larsson",
+      products: ["Fresh fruits", "Seasonal vegetables", "Common and rare vegetables"],
+      specialties: "Focus on quality, inspiration, knowledge and unique ingredients with full traceability",
+      hours: "Wed-Fri 10-18, Sat 10-16, Sun 11-15",
+      website: "www.ugglarpsgront.se",
+      social_media: "https://www.instagram.com/visitugglarp",
+      description: "Family-run farm shop with regenerative farming and unique, traceable ingredients."
     },
     {
       name: "Gudmundsgården",
-      type: "Gårdscharkuteri",
-      location: "Slöinge, utanför Falkenberg",
-      description: "Hallands äldsta gårdscharkuteri med Sveriges största sortiment av egentillverkade charkvaror.",
-      products: ["Korvar", "Kött", "Charkprodukter"],
-      social_media: "facebook.com/Gudmundsgarden"
+      type: "Farm Delicatessen",
+      location: "Slöinge, outside Falkenberg",
+      products: ["Sausages", "Meat", "Charcuterie"],
+      specialties: "Sweden's largest assortment of homemade charcuterie",
+      social_media: "https://www.facebook.com/Gudmundsgarden",
+      reviews: "4.0/5 on Tripadvisor (30 reviews)",
+      description: "Halland's oldest farm delicatessen with Sweden's largest assortment of homemade charcuterie."
     },
     {
-      name: "Korshags",
-      type: "Livsmedelsproducent med butik",
-      location: "Servicevägen 3, Falkenberg",
-      description: "En hållbar fiskproducent med butik. Alla fiskprodukter är ASC-märkta eller ekologiskt KRAV-märkta.",
-      products: ["Nyrökta fiskprodukter", "Pinfärsk lax", "Färsk fisk & skaldjur", "Färdigrätter"],
-      contact: "0346-71 57 57",
-      website: "www.korshags.se"
-    },
-    {
-      name: "Hallandsbär",
-      type: "Självplock, café, pizzeria, gårdsbutik och vinodling",
-      location: "Stora Berg 110, Getinge",
-      description: "Ett mångsidigt besöksmål som kombinerar självplock av bär och grönsaker med café, pizzeria och gårdsbutik.",
-      products: ["Jordgubbar", "Hallon", "Blåbär", "Sparris", "Ekologiska grönsaker"],
-      contact: "073-252 17 40",
-      website: "hallandsbar.se"
-    },
-    {
-      name: "Falkenberg Strandbad",
-      type: "Hotell och restaurang",
-      location: "Skrea strand, Falkenberg",
-      description: "Beläget direkt vid havet med tre restauranger som serverar mat med lokala råvaror. På dagar med klart väder kan man se Danmark.",
-      facilities: ["3 restauranger", "4 pooler", "Spa"],
-      specialties: ["Fine dining med havsutsikt", "Lokala råvaror", "Säsongsbetonad meny"]
+      name: "Hakaslätts Svamp",
+      type: "Mushroom farming",
+      location: "Hakestad 132, Ullared",
+      products: ["Mushrooms"],
+      specialties: "Family business, requires daily care like farming",
+      social_media: "https://www.facebook.com/hakaslatt",
+      description: "Family-owned mushroom farm in Ullared requiring daily care."
     },
     {
       name: "Thuressons",
-      type: "Gårdsbutik med charkuteri",
-      location: "Glommen, nära Varberg & Falkenberg",
-      description: "Känd som 'Hallands största köttdisk' och prisbelönt för sina charkprodukter utan tillsatser.",
-      products: ["Köttlådor", "Rökt skinka", "Mor Alice leverpastej (vann guld i Svenskt Mathantverk)", "Thuressons bacon", "Olika korvar"],
-      website: "www.gardsbutikthuresson.se"
+      type: "Farm shop with delicatessen",
+      location: "Glommen, near Varberg & Falkenberg",
+      products: ["Meat boxes", "Preservative-free charcuterie", "Smoked ham", "Mother Alice's liver pate", "Thuresson's bacon", "Various sausages"],
+      specialties: "Halland's largest meat counter, award-winning liver pate",
+      website: "www.gardsbutikthuresson.se",
+      social_media: "https://www.facebook.com/gardsbutik.thuresson",
+      description: "Farm shop and delicatessen with Halland's largest meat counter and award-winning liver pate."
+    },
+    {
+      name: "Kobb",
+      type: "Impact and food tech company",
+      location: "Glommen, Halland",
+      products: ["Seaweed products"],
+      specialties: "Climate-positive commercial seaweed farming, sustainable seafood",
+      website: "kobb.nu",
+      description: "Food tech company farming climate-positive seaweed on the west coast."
+    },
+    {
+      name: "Korshags",
+      type: "Food producer with store",
+      location: "Servicevägen 3, Falkenberg",
+      products: ["Freshly smoked fish products", "Fresh salmon", "Fresh fish & shellfish", "Ready meals"],
+      specialties: "All fish products are ASC or KRAV certified",
+      website: "www.korshags.se",
+      social_media: "https://www.instagram.com/korshags_butiken",
+      description: "Food producer and store with sustainably certified fish and seafood."
+    },
+    {
+      name: "Hallandsbär",
+      type: "Pick-your-own, café, pizzeria, farm shop and vineyard",
+      location: "Stora Berg 110, Getinge",
+      products: ["Strawberries", "Raspberries", "Blueberries", "Blackberries", "Asparagus", "Lettuce", "Beetroots", "Garlic", "Onions", "Tomatoes", "Cucumber", "Flowers"],
+      website: "hallandsbar.se",
+      contact: "073-252 17 40",
+      description: "Pick-your-own, café, pizzeria, farm shop and vineyard with wide range of berries and vegetables."
+    },
+    {
+      name: "Falkenberg Strandbad",
+      type: "Hotel and restaurant",
+      location: "Skrea beach, Falkenberg",
+      facilities: ["3 restaurants", "4 pools", "Spa"],
+      specialties: "Located directly by the sea, fine dining with ocean view",
+      ratings: "4/5 on Tripadvisor, ranked #1 in Falkenberg",
+      description: "Luxury hotel and restaurant by the sea with spa and multiple restaurants."
     }
   ]
 };
@@ -71,23 +96,23 @@ const hallandCulinary = {
 const culinaryAdvantages = [
   {
     title: "Farm-to-Table Excellence",
-    description: "Lokala råvaror från de böljande kullarna, sädesfälten och kusten i Halland skapar en välutrustad skafferi för restauranger."
+    description: "Local ingredients from the rolling hills, grain fields, and coast of Halland create a well-stocked pantry for restaurants."
   },
   {
-    title: "Ekologisk och regenerativ odling",
-    description: "Många lokala producenter använder ekologiska och regenerativa odlingsmetoder, vilket bidrar till både smak och miljömässig hållbarhet."
+    title: "Organic and Regenerative Farming",
+    description: "Many local producers use organic and regenerative farming methods, contributing to both taste and environmental sustainability."
   },
   {
-    title: "Havets skafferi",
-    description: "Kustlinjen erbjuder färsk fisk och skaldjur, allt från lokalt odlad och hållbar lax till nyrökt fisk och säsongens fångster."
+    title: "Ocean's Pantry",
+    description: "The coastline offers fresh fish and seafood, from locally farmed sustainable salmon to freshly smoked fish and seasonal catches."
   },
   {
-    title: "Unika besöksmål",
-    description: "Från självplock av färska bär till gårdsbutiker med charkuterier och restauranger vid havet – Halland erbjuder matupplevelser för alla sinnen."
+    title: "Unique Destinations",
+    description: "From pick-your-own fresh berries to farm shops with delicatessens and seaside restaurants – Halland offers culinary experiences for all senses."
   },
   {
-    title: "Säsongsfokus",
-    description: "Restauranger och producenter betonar säsongsmenyer med ingredienser som odlas, plockas och jagas lokalt, vilket bidrar till hälsa och hållbarhet."
+    title: "Seasonal Focus",
+    description: "Restaurants and producers emphasize seasonal menus with locally grown, foraged, and hunted ingredients, contributing to health and sustainability."
   }
 ];
 
@@ -111,7 +136,7 @@ export function FoodNatureSection() {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-white overflow-hidden" ref={ref}>
+    <section className="py-20 md:py-32 bg-background overflow-hidden" ref={ref}>
       <div className="container mx-auto px-4 md:px-8">
         <motion.div 
           className="max-w-3xl mx-auto text-center mb-16"
@@ -120,7 +145,7 @@ export function FoodNatureSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">{hallandCulinary.title}</h2>
-          <p className="text-lg text-neutral-600">
+          <p className="text-lg text-foreground/80">
             {hallandCulinary.description}
           </p>
         </motion.div>
@@ -142,8 +167,8 @@ export function FoodNatureSection() {
             </div>
             <div className="h-80 rounded-lg overflow-hidden shadow-lg">
               <img 
-                src={hallandCulinary.image_urls.cycling} 
-                alt="Cycling on Kattegattleden in Halland, Sweden" 
+                src="/images/culinary_option_1.webp" 
+                alt="Cycling near the coast in Halland, Sweden" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -152,7 +177,7 @@ export function FoodNatureSection() {
 
         {/* Highlight Quote */}
         <motion.div
-          className="mb-16 max-w-4xl mx-auto bg-primary/5 p-8 rounded-lg border-l-4 border-accent"
+          className="mb-16 max-w-4xl mx-auto bg-card p-8 rounded-lg border-l-4 border-accent"
           initial={{ opacity: 0, x: -20 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
           transition={{ duration: 0.8 }}
@@ -177,15 +202,15 @@ export function FoodNatureSection() {
             {hallandCulinary.producers.slice(0, 3).map((producer, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-card rounded-lg shadow-md overflow-hidden"
                 variants={itemVariants}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
                 <div className="p-6">
                   <span className="text-xs font-medium text-accent uppercase tracking-wider">{producer.type}</span>
                   <h4 className="font-heading font-bold text-xl text-primary mt-1 mb-2">{producer.name}</h4>
-                  <p className="text-neutral-600 mb-3 text-sm">{producer.location}</p>
-                  <p className="text-neutral-600 mb-4">{producer.description}</p>
+                  <p className="text-card-foreground mb-3 text-sm">{producer.location}</p>
+                  <p className="text-card-foreground mb-4">{producer.description}</p>
                   <div className="flex flex-wrap gap-2 mt-3">
                     {producer.products && producer.products.slice(0, 3).map((product, i) => (
                       <span 
@@ -263,15 +288,15 @@ export function FoodNatureSection() {
               <div className="space-y-4">
                 <div className="rounded-lg overflow-hidden shadow-md h-56">
                   <img 
-                    src="/images/halland-coastal-scenery.jpg" 
-                    alt="Coastal scenery in Halland" 
+                    src="/images/culinary_option_2.jpg" 
+                    alt="Close up of hands holding" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-md h-40">
                   <img 
-                    src="https://images.unsplash.com/photo-1611072172377-0cabc3addb30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                    alt="Traditional Nordic food" 
+                    src="/public/images/matdagarna-22-113-2048x1365.jpg" 
+                    alt="Close up of hands holding" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -279,14 +304,14 @@ export function FoodNatureSection() {
               <div className="space-y-4 mt-8">
                 <div className="rounded-lg overflow-hidden shadow-md h-40">
                   <img 
-                    src="https://images.unsplash.com/photo-1467664631004-58beab1ece0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                    alt="Halland countryside" 
+                    src="/images/ugglarps_gront_tomat.jpg" 
+                    alt="Man in suit drinking coffee" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-md h-56">
                   <img 
-                    src="/images/kattegattleden-cycling.jpg" 
+                    src="/images/DSCF9548-e1699469679535.jpg" 
                     alt="Cycling in Halland" 
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                   />

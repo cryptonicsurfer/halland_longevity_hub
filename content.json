@@ -1,0 +1,1023 @@
+{
+  "defaultLanguage": "en",
+  "en": {
+    "meta": {
+      "title": "Halland Longevity Project | Food, Health & Future",
+      "description": "Discover the future of longevity at the nexus of food, health tourism, and sustainable living in Falkenberg, Halland Sweden."
+    },
+    "global": {
+      "companyName": "Halland Longevity Project",
+      "companyEmail": "info@hallandlongevity.se",
+      "companyPhone": "+46 346 88 61 00",
+      "companyAddress": {
+        "street": "Strandvägen 45",
+        "city": "Falkenberg",
+        "postalCode": "311 37",
+        "country": "Sweden"
+      },
+      "social": {
+        "instagram": "https://instagram.com/hallandlongevity",
+        "twitter": "https://twitter.com/hallandlongevity",
+        "linkedin": "https://linkedin.com/company/hallandlongevity",
+        "facebook": "https://facebook.com/hallandlongevity"
+      },
+      "navigation": [
+        {
+          "label": "Vision",
+          "href": "#vision"
+        },
+        {
+          "label": "Projects",
+          "href": "#projects"
+        },
+        {
+          "label": "Longevity Hub",
+          "href": "#longevity-hub"
+        },
+        {
+          "label": "News",
+          "href": "#news"
+        },
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "cta": {
+        "label": "Join The Journey",
+        "href": "#contact"
+      },
+      "footer": {
+        "about": "Creating a future of abundance through the nexus of food, health, and sustainable living in the heart of Sweden's longevity region.",
+        "quickLinks": [
+          {
+            "label": "Our Vision",
+            "href": "#vision"
+          },
+          {
+            "label": "Projects",
+            "href": "#projects"
+          },
+          {
+            "label": "Longevity Hub",
+            "href": "#longevity-hub"
+          },
+          {
+            "label": "News & Insights",
+            "href": "#news"
+          },
+          {
+            "label": "Contact Us",
+            "href": "#contact"
+          }
+        ],
+        "resources": [
+          {
+            "label": "Research Papers",
+            "href": "#"
+          },
+          {
+            "label": "Health Tourism Guide",
+            "href": "#"
+          },
+          {
+            "label": "Investment Opportunities",
+            "href": "#"
+          },
+          {
+            "label": "Sustainability Report",
+            "href": "#"
+          },
+          {
+            "label": "Media Kit",
+            "href": "#"
+          }
+        ],
+        "newsletter": {
+          "title": "Subscribe",
+          "description": "Stay updated with our latest news and developments.",
+          "privacyText": "By subscribing, you agree to our Privacy Policy and consent to receive updates from Halland Longevity Project."
+        },
+        "legal": [
+          {
+            "label": "Privacy Policy",
+            "href": "#"
+          },
+          {
+            "label": "Terms of Service",
+            "href": "#"
+          },
+          {
+            "label": "Cookies Policy",
+            "href": "#"
+          }
+        ]
+      }
+    },
+    "hero": {
+      "title": "The Future of Longevity Begins in <span class=\"text-accent\">Halland</span>",
+      "subtitle": "Where sustainable food systems, health innovation, and natural living come together to create a future of abundance.",
+      "ctaButtons": [
+        {
+          "label": "Discover Our Vision",
+          "href": "#vision",
+          "primary": true
+        },
+        {
+          "label": "Explore Longevity Hub",
+          "href": "#longevity-hub",
+          "primary": false
+        }
+      ],
+      "backgroundImage": "/images/longevity_option_1.webp"
+    },
+    "vision": {
+      "title": "Our Vision for Long, Vibrant Lives",
+      "paragraphs": [
+        "In Halland – the region with the highest life expectancy in Sweden and among the highest in the world – we envision a future where longevity isn't just about adding years to life, but adding life to years.",
+        "We're creating a nexus where world-class gastronomy, preventative healthcare, and sustainable living practices converge to form a blueprint for the future of human flourishing."
+      ],
+      "ctaText": "Explore our initiatives",
+      "ctaLink": "#projects",
+      "statistics": [
+        {
+          "value": "84.03",
+          "label": "Years Life Expectancy",
+          "description": "Highest in Sweden and among the top globally"
+        },
+        {
+          "value": "1st",
+          "label": "Regional Cuisine",
+          "description": "Featured on Eater.com as a culinary destination"
+        },
+        {
+          "value": "80%",
+          "label": "Local Sourcing",
+          "description": "Of ingredients in regional cuisine comes from local farms"
+        },
+        {
+          "value": "+30%",
+          "label": "Health Tourism",
+          "description": "Growth in health-focused visitors since 2019"
+        }
+      ],
+      "animationData": {
+        "title": "Life Expectancy in Halland (1966-2024)",
+        "subtitle": "Compared to Blue Zones and US Averages",
+        "periods": [
+          {"period": "1966-1970", "women": 77.7, "men": 73.2},
+          {"period": "1971-1975", "women": 78.4, "men": 73.5},
+          {"period": "1976-1980", "women": 79.5, "men": 73.6},
+          {"period": "1981-1985", "women": 80.3, "men": 74.8},
+          {"period": "1986-1990", "women": 81.5, "men": 76.0},
+          {"period": "1991-1995", "women": 82.1, "men": 76.9},
+          {"period": "1996-2000", "women": 82.7, "men": 77.8},
+          {"period": "2001-2005", "women": 83.4, "men": 79.1},
+          {"period": "2006-2010", "women": 84.2, "men": 80.2},
+          {"period": "2011-2015", "women": 84.7, "men": 80.9},
+          {"period": "2016-2020", "women": 85.1, "men": 82.1},
+          {"period": "2017-2021", "women": 85.4, "men": 82.2},
+          {"period": "2018-2022", "women": 85.5, "men": 82.4},
+          {"period": "2019-2023", "women": 85.5, "men": 82.5},
+          {"period": "2020-2024", "women": 85.6, "men": 82.6}
+        ],
+        "referenceLines": {
+          "blueZonesWomen": 85.8,
+          "blueZonesMen": 81.5,
+          "usWomen": 80.5,
+          "usMen": 75.1
+        },
+        "observations": [
+          "Halland women (latest: 85.6 years) are slightly below Blue Zones women (85.8 years) but well above US women (80.5 years)",
+          "Halland men (latest: 82.6 years) have surpassed Blue Zones men (81.5 years) in recent years",
+          "The gender gap in Halland has narrowed over time from 4.5 years to 3.0 years",
+          "Both Halland men and women consistently outperform US life expectancy"
+        ]
+      }
+    },
+    "parallaxQuote": {
+      "quote": "The secret to longevity isn't medical breakthroughs alone—it's the connection between what we eat, how we move, and where we live.",
+      "author": "Dr. Maria Lindström, Longevity Researcher",
+      "backgroundImage": "https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    "projects": {
+      "title": "Pioneering Projects",
+      "description": "Discover how we're building the future of longevity through innovative initiatives that bridge culinary excellence, preventative healthcare, and sustainable living.",
+      "items": [
+        {
+          "id": 1,
+          "title": "Farm-to-Table Network",
+          "description": "Connecting local farmers with restaurants to create a sustainable food system that preserves traditional methods while embracing innovation.",
+          "imageUrl": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+          "imageAlt": "Nordic farm-to-table dining concept"
+        },
+        {
+          "id": 2,
+          "title": "Preventative Health Center",
+          "description": "State-of-the-art facility offering personalized health assessments, longevity planning, and integrative medicine approaches.",
+          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+          "imageAlt": "Preventative health center with medical technology"
+        },
+        {
+          "id": 3,
+          "title": "Blue Zone Living Community",
+          "description": "Residential concept designed to foster social connection, physical activity, and purpose - key factors in longevity found in blue zones worldwide.",
+          "imageUrl": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+          "imageAlt": "Blue Zone living community with eco-friendly housing"
+        }
+      ],
+      "ctaText": "View All Projects",
+      "ctaLink": "#"
+    },
+    "longevityHub": {
+      "title": "The Falkenberg Longevity Hub",
+      "paragraphs": [
+        "At the heart of our vision is the Falkenberg Longevity Hub, a groundbreaking center where visitors can experience the interconnection of nutrition, movement, nature, and community.",
+        "The hub features research facilities, culinary innovation spaces, health assessment centers, and immersive educational programs—all designed to explore and share the secrets of Halland's extraordinary longevity."
+      ],
+      "statBox": {
+        "title": "Halland's Longevity in Numbers",
+        "sections": [
+          {
+            "title": "Halland has the highest life expectancy in Sweden:",
+            "items": [
+              {"label": "Overall", "value": "84.03 years (2019-2023)"},
+              {"label": "Men", "value": "82.52 years"},
+              {"label": "Women", "value": "85.53 years"},
+              {"label": "Rank", "value": "#1 out of 21 Swedish counties"}
+            ]
+          },
+          {
+            "title": "Compared to European and global data:",
+            "items": [
+              {"label": "South Sweden (Eurostat 2022)", "value": "82.7 years"},
+              {"label": "South Sweden (Global Data Lab 2022)", "value": "83.04 years"}
+            ]
+          },
+          {
+            "title": "Halland's longevity rivals the world's famous Blue Zones:",
+            "items": [
+              {"label": "Okinawa, Japan", "value": "Known for longest-living women, ~84-86 years"},
+              {"label": "Sardinia, Italy", "value": "Exceptional male longevity, ~82+ years"},
+              {"label": "Ikaria, Greece", "value": "8 years longer than US average"},
+              {"label": "Nicoya, Costa Rica", "value": "20% lower mortality than rest of Costa Rica"},
+              {"label": "Loma Linda, USA", "value": "7-10 years longer than US average"}
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "icon": "flask",
+          "title": "Culinary Research Lab",
+          "description": "Exploring how traditional Nordic ingredients and preparation methods contribute to longevity."
+        },
+        {
+          "icon": "user",
+          "title": "Personalized Wellness",
+          "description": "Individual assessments and programs tailored to genetic profiles and lifestyle factors."
+        },
+        {
+          "icon": "globe",
+          "title": "Nature Immersion",
+          "description": "Programs that leverage Halland's natural landscapes for physical and mental wellbeing."
+        },
+        {
+          "icon": "shield",
+          "title": "Health Tourism",
+          "description": "Immersive experiences for visitors seeking to learn and apply Halland's longevity principles."
+        }
+      ],
+      "map": {
+        "image": "/images/longevity_option_2.webp",
+        "imageAlt": "Falkenberg Longevity Hub concept image",
+        "markers": [
+          {
+            "id": 1,
+            "top": "25%",
+            "left": "33%",
+            "label": "Longevity Research Center"
+          },
+          {
+            "id": 2,
+            "top": "50%",
+            "left": "66%",
+            "label": "Culinary Innovation Hub"
+          },
+          {
+            "id": 3,
+            "top": "66%",
+            "left": "25%",
+            "label": "Wellness Tourism Center"
+          }
+        ],
+        "ctaText": "Explore the interactive map in detail",
+        "ctaLink": "#"
+      }
+    },
+    "foodNature": {
+      "title": "Halland, Sweden: A Hidden Culinary Paradise",
+      "description": "Halland, on Sweden's western coast, boasts a rich culinary tradition inspired by its diverse geography—coastal seafood, agricultural produce, and forest forage. Falkenberg stands out as a hidden gem within the region, offering everything from casual beachside dining to high-end restaurants with ocean views.",
+      "images": {
+        "coastal": "/images/455a4418_CMSTemplate.webp",
+        "cycling": "/images/culinary_option_1.webp"
+      },
+      "highlightQuote": "The landscape of Halland—with its coast, rolling hills, forests, and fields—provides a pantry of fresh seafood, quality meats, seasonal vegetables, and foraged delicacies.",
+      "topProducers": {
+        "title": "Halland's Food Producers",
+        "producers": [
+          {
+            "name": "Ugglarps Grönt",
+            "type": "Gårdsbutik med regenerativ odling",
+            "location": "Ugglarp, Halland",
+            "description": "Familjedriven gårdsbutik med regenerativ odling och unika, spårbara råvaror.",
+            "products": ["Färska frukter", "Säsongsbetonade grönsaker", "Ovanliga grönsaker"]
+          },
+          {
+            "name": "Gudmundsgården",
+            "type": "Gårdscharkuteri",
+            "location": "Slöinge, utanför Falkenberg",
+            "description": "Hallands äldsta gårdscharkuteri med Sveriges största sortiment av egentillverkade charkvaror.",
+            "products": ["Korvar", "Kött", "Charkprodukter"]
+          },
+          {
+            "name": "Hakaslätts Svamp",
+            "type": "Svampodling/champinjonodling",
+            "location": "Hakestad 132, Ullared",
+            "description": "Familjeägd svampodling i Ullared som kräver daglig omsorg.",
+            "products": ["Champinjoner", "Svampprodukter"]
+          }
+        ]
+      },
+      "foodExperience": {
+        "title": "The Halland Food Experience",
+        "introduction": "What makes Halland's food scene unique is not just the quality of ingredients, but the innovative food producers and dedication to tradition that create memorable experiences:",
+        "advantages": [
+          {
+            "title": "Farm-to-Table Excellence",
+            "description": "Lokala råvaror från de böljande kullarna, sädesfälten och kusten i Halland skapar en välutrustad skafferi för restauranger."
+          },
+          {
+            "title": "Ekologisk och regenerativ odling",
+            "description": "Många lokala producenter använder ekologiska och regenerativa odlingsmetoder, vilket bidrar till både smak och miljömässig hållbarhet."
+          },
+          {
+            "title": "Havets skafferi",
+            "description": "Kustlinjen erbjuder färsk fisk och skaldjur, allt från lokalt odlad och hållbar lax till nyrökt fisk och säsongens fångster."
+          },
+          {
+            "title": "Unika besöksmål",
+            "description": "Från självplock av färska bär till gårdsbutiker med charkuterier och restauranger vid havet – Halland erbjuder matupplevelser för alla sinnen."
+          },
+          {
+            "title": "Säsongsfokus",
+            "description": "Restauranger och producenter betonar säsongsmenyer med ingredienser som odlas, plockas och jagas lokalt, vilket bidrar till hälsa och hållbarhet."
+          }
+        ],
+        "imageGallery": [
+          {
+            "src": "/images/culinary_option_2.jpg",
+            "alt": "Close up of hands holding"
+          },
+          {
+            "src": "/images/DSCF9537-e1699469643130.jpg",
+            "alt": "Close up of hands holding"
+          },
+          {
+            "src": "/images/DSCF9548-e1699469679535.jpg",
+            "alt": "Man in suit drinking coffee"
+          },
+          {
+            "src": "/images/kattegattleden-cycling.jpg",
+            "alt": "Cycling in Halland"
+          }
+        ],
+        "badgeText": "1st",
+        "ctaText": "Plan Your Culinary Tour",
+        "ctaLink": "#contact"
+      }
+    },
+    "news": {
+      "title": "Latest News & Insights",
+      "description": "Stay updated on the latest developments, research findings, and events related to our longevity initiatives.",
+      "viewAllLink": "#",
+      "viewAllText": "View all news",
+      "items": [
+        {
+          "id": 1,
+          "title": "International Longevity Symposium to be Hosted in Falkenberg",
+          "excerpt": "World-renowned researchers and culinary experts will gather to explore the intersection of nutrition and longevity.",
+          "imageUrl": "/images/1700175473082.jpeg",
+          "imageAlt": "People attending the International Longevity Symposium",
+          "date": "September 15, 2023",
+          "category": "Events"
+        },
+        {
+          "id": 2,
+          "title": "New Study Confirms Halland's Exceptional Longevity Metrics",
+          "excerpt": "Research published in the International Journal of Population Health validates Halland's position as a global longevity hotspot.",
+          "imageUrl": "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+          "imageAlt": "Elderly people enjoying outdoor fitness activities",
+          "date": "August 28, 2023",
+          "category": "Research"
+        },
+        {
+          "id": 3,
+          "title": "Construction Begins on Falkenberg Wellness Tourism Center",
+          "excerpt": "The state-of-the-art facility will welcome health-conscious visitors from around the world starting next summer.",
+          "imageUrl": "/images/Wakame-Seaweed-Salad_A.jpg",
+          "imageAlt": "Fresh vegetables and ingredients for healthy cooking",
+          "date": "August 10, 2023",
+          "category": "Development"
+        }
+      ],
+      "pagination": {
+        "currentPage": 2,
+        "totalPages": 3
+      }
+    },
+    "contact": {
+      "title": "Join the Halland Longevity Movement",
+      "description": "Whether you're interested in visiting, investing, researching, or learning more about our initiatives, we'd love to connect with you.",
+      "contactInfo": {
+        "address": {
+          "label": "Visit Us",
+          "value": "Falkenberg Longevity Hub<br>Strandvägen 45<br>311 37 Falkenberg, Sweden"
+        },
+        "email": {
+          "label": "Email Us",
+          "value": "info@hallandlongevity.se<br>partnerships@hallandlongevity.se"
+        },
+        "phone": {
+          "label": "Call Us",
+          "value": "+46 346 88 61 00"
+        }
+      },
+      "form": {
+        "title": "Send Us a Message",
+        "fields": {
+          "firstName": {
+            "label": "First Name*",
+            "placeholder": "Your first name"
+          },
+          "lastName": {
+            "label": "Last Name*",
+            "placeholder": "Your last name"
+          },
+          "email": {
+            "label": "Email Address*",
+            "placeholder": "Your email address"
+          },
+          "phone": {
+            "label": "Phone Number",
+            "placeholder": "Your phone number"
+          },
+          "interest": {
+            "label": "I'm interested in*",
+            "placeholder": "Please select...",
+            "options": [
+              {
+                "value": "visiting",
+                "label": "Visiting the Longevity Hub"
+              },
+              {
+                "value": "investing",
+                "label": "Investment Opportunities"
+              },
+              {
+                "value": "research",
+                "label": "Research Collaboration"
+              },
+              {
+                "value": "tourism",
+                "label": "Health Tourism Packages"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ]
+          },
+          "message": {
+            "label": "Your Message*",
+            "placeholder": "Please let us know how we can help you"
+          },
+          "privacy": {
+            "label": "I agree to the <a href=\"#\" class=\"text-primary hover:text-secondary\">Privacy Policy</a> and consent to being contacted about Halland Longevity initiatives."
+          }
+        },
+        "submitButton": "Submit Message"
+      }
+    }
+  },
+  "sv": {
+    "meta": {
+      "title": "Halland Longevity Project | Mat, Hälsa & Framtid",
+      "description": "Upptäck framtidens livslängd i Halland, Sverige, där mat, hälsoturism och hållbart boende möts."
+    },
+    "global": {
+      "companyName": "Halland Longevity Project",
+      "companyEmail": "info@hallandlongevity.se",
+      "companyPhone": "+46 346 88 61 00",
+      "companyAddress": {
+        "street": "Strandvägen 45",
+        "city": "Falkenberg",
+        "postalCode": "311 37",
+        "country": "Sweden"
+      },
+      "social": {
+        "instagram": "https://instagram.com/hallandlongevity",
+        "twitter": "https://twitter.com/hallandlongevity",
+        "linkedin": "https://linkedin.com/company/hallandlongevity",
+        "facebook": "https://facebook.com/hallandlongevity"
+      },
+      "navigation": [
+        {
+          "label": "Vision",
+          "href": "#vision"
+        },
+        {
+          "label": "Projekt",
+          "href": "#projects"
+        },
+        {
+          "label": "Longevity Hub",
+          "href": "#longevity-hub"
+        },
+        {
+          "label": "Nyheter",
+          "href": "#news"
+        },
+        {
+          "label": "Kontakt",
+          "href": "#contact"
+        }
+      ],
+      "cta": {
+        "label": "Följ Med På Resan",
+        "href": "#contact"
+      },
+      "footer": {
+        "about": "Skapar en framtid av överflöd genom mötet mellan mat, hälsa och hållbart boende i hjärtat av Sveriges livslängdsregion.",
+        "quickLinks": [
+          {
+            "label": "Vår Vision",
+            "href": "#vision"
+          },
+          {
+            "label": "Projekt",
+            "href": "#projects"
+          },
+          {
+            "label": "Longevity Hub",
+            "href": "#longevity-hub"
+          },
+          {
+            "label": "Nyheter & Insikter",
+            "href": "#news"
+          },
+          {
+            "label": "Kontakta Oss",
+            "href": "#contact"
+          }
+        ],
+        "resources": [
+          {
+            "label": "Forskningsrapporter",
+            "href": "#"
+          },
+          {
+            "label": "Guide för Hälsoturism",
+            "href": "#"
+          },
+          {
+            "label": "Investeringsmöjligheter",
+            "href": "#"
+          },
+          {
+            "label": "Hållbarhetsrapport",
+            "href": "#"
+          },
+          {
+            "label": "Mediapaket",
+            "href": "#"
+          }
+        ],
+        "newsletter": {
+          "title": "Prenumerera",
+          "description": "Håll dig uppdaterad med våra senaste nyheter och utvecklingar.",
+          "privacyText": "Genom att prenumerera godkänner du vår integritetspolicy och samtycker till att ta emot uppdateringar från Halland Longevity Project."
+        },
+        "legal": [
+          {
+            "label": "Integritetspolicy",
+            "href": "#"
+          },
+          {
+            "label": "Användarvillkor",
+            "href": "#"
+          },
+          {
+            "label": "Cookiepolicy",
+            "href": "#"
+          }
+        ]
+      }
+    },
+    "hero": {
+      "title": "Framtidens Livslängd Börjar i <span class=\"text-accent\">Halland</span>",
+      "subtitle": "Där hållbara livsmedelssystem, hälsoinnovation och naturligt boende möts för att skapa en framtid av överflöd.",
+      "ctaButtons": [
+        {
+          "label": "Upptäck Vår Vision",
+          "href": "#vision",
+          "primary": true
+        },
+        {
+          "label": "Utforska Longevity Hub",
+          "href": "#longevity-hub",
+          "primary": false
+        }
+      ],
+      "backgroundImage": "/images/longevity_option_1.webp"
+    },
+    "vision": {
+      "title": "Vår Vision för Långa, Vibrerande Liv",
+      "paragraphs": [
+        "I Halland – regionen med den högsta livslängden i Sverige och bland de högsta i världen – ser vi framför oss en framtid där livslängd inte bara handlar om att lägga år till livet, utan att lägga liv till åren.",
+        "Vi skapar ett centrum där gastronomi i världsklass, förebyggande hälsovård och hållbara levnadssätt möts för att forma en ritning för framtiden för mänskligt välmående."
+      ],
+      "ctaText": "Utforska våra initiativ",
+      "ctaLink": "#projects",
+      "statistics": [
+        {
+          "value": "84.03",
+          "label": "Års Livslängd",
+          "description": "Högst i Sverige och bland de högsta globalt"
+        },
+        {
+          "value": "1:a",
+          "label": "Regionalt Kök",
+          "description": "Presenterat på Eater.com som en kulinarisk destination"
+        },
+        {
+          "value": "80%",
+          "label": "Lokalproducerat",
+          "description": "Av ingredienser i det regionala köket kommer från lokala gårdar"
+        },
+        {
+          "value": "+30%",
+          "label": "Hälsoturism",
+          "description": "Tillväxt av hälsofokuserade besökare sedan 2019"
+        }
+      ],
+      "animationData": {
+        "title": "Livslängd i Halland (1966-2024)",
+        "subtitle": "Jämfört med Blå Zoner och US Genomsnitt",
+        "periods": [
+          {"period": "1966-1970", "women": 77.7, "men": 73.2},
+          {"period": "1971-1975", "women": 78.4, "men": 73.5},
+          {"period": "1976-1980", "women": 79.5, "men": 73.6},
+          {"period": "1981-1985", "women": 80.3, "men": 74.8},
+          {"period": "1986-1990", "women": 81.5, "men": 76.0},
+          {"period": "1991-1995", "women": 82.1, "men": 76.9},
+          {"period": "1996-2000", "women": 82.7, "men": 77.8},
+          {"period": "2001-2005", "women": 83.4, "men": 79.1},
+          {"period": "2006-2010", "women": 84.2, "men": 80.2},
+          {"period": "2011-2015", "women": 84.7, "men": 80.9},
+          {"period": "2016-2020", "women": 85.1, "men": 82.1},
+          {"period": "2017-2021", "women": 85.4, "men": 82.2},
+          {"period": "2018-2022", "women": 85.5, "men": 82.4},
+          {"period": "2019-2023", "women": 85.5, "men": 82.5},
+          {"period": "2020-2024", "women": 85.6, "men": 82.6}
+        ],
+        "referenceLines": {
+          "blueZonesWomen": 85.8,
+          "blueZonesMen": 81.5,
+          "usWomen": 80.5,
+          "usMen": 75.1
+        },
+        "observations": [
+          "Halländska kvinnor (senaste: 85.6 år) ligger något under Blå Zoner kvinnor (85.8 år) men väl över amerikanska kvinnor (80.5 år)",
+          "Halländska män (senaste: 82.6 år) har överträffat Blå Zoner män (81.5 år) de senaste åren",
+          "Könsklyftan i Halland har minskat över tid från 4.5 år till 3.0 år",
+          "Både halländska män och kvinnor presterar konsekvent bättre än den amerikanska livslängden"
+        ]
+      }
+    },
+    "parallaxQuote": {
+      "quote": "Hemligheten till ett långt liv är inte bara medicinska genombrott – det är kopplingen mellan vad vi äter, hur vi rör oss och var vi bor.",
+      "author": "Dr. Maria Lindström, Livslängdsforskare",
+      "backgroundImage": "https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    "projects": {
+      "title": "Banbrytande Projekt",
+      "description": "Upptäck hur vi bygger framtidens livslängd genom innovativa initiativ som överbryggar kulinarisk excellens, förebyggande hälsovård och hållbart boende.",
+      "items": [
+        {
+          "id": 1,
+          "title": "Gård-till-bord Nätverk",
+          "description": "Kopplar samman lokala bönder med restauranger för att skapa ett hållbart livsmedelssystem som bevarar traditionella metoder samtidigt som det omfamnar innovation.",
+          "imageUrl": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+          "imageAlt": "Nordiskt gård-till-bord matkoncept"
+        },
+        {
+          "id": 2,
+          "title": "Förebyggande Hälsocenter",
+          "description": "Toppmodern anläggning som erbjuder personliga hälsoundersökningar, livslängdsplanering och integrativa medicinska metoder.",
+          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+          "imageAlt": "Förebyggande hälsocenter med medicinsk teknik"
+        },
+        {
+          "id": 3,
+          "title": "Blå Zonen Livsstilsgemenskap",
+          "description": "Bostadskoncept utformat för att främja social kontakt, fysisk aktivitet och syfte – nyckelfaktorer för livslängd som finns i blå zoner världen över.",
+          "imageUrl": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+          "imageAlt": "Blå Zonen livsstilsgemenskap med miljövänliga bostäder"
+        }
+      ],
+      "ctaText": "Se Alla Projekt",
+      "ctaLink": "#"
+    },
+    "longevityHub": {
+      "title": "Falkenberg Longevity Hub",
+      "paragraphs": [
+        "I hjärtat av vår vision ligger Falkenberg Longevity Hub, ett banbrytande center där besökare kan uppleva samverkan mellan näring, rörelse, natur och gemenskap.",
+        "Hubben har forskningsanläggningar, kulinariska innovationsutrymmen, hälsoundersökningscenter och engagerande utbildningsprogram – alla utformade för att utforska och dela hemligheterna bakom Hallands extraordinära livslängd."
+      ],
+      "statBox": {
+        "title": "Hallands Livslängd i Siffror",
+        "sections": [
+          {
+            "title": "Halland har den högsta livslängden i Sverige:",
+            "items": [
+              {"label": "Totalt", "value": "84.03 år (2019-2023)"},
+              {"label": "Män", "value": "82.52 år"},
+              {"label": "Kvinnor", "value": "85.53 år"},
+              {"label": "Rankning", "value": "#1 av 21 svenska län"}
+            ]
+          },
+          {
+            "title": "Jämfört med europeisk och global data:",
+            "items": [
+              {"label": "Södra Sverige (Eurostat 2022)", "value": "82.7 år"},
+              {"label": "Södra Sverige (Global Data Lab 2022)", "value": "83.04 år"}
+            ]
+          },
+          {
+            "title": "Hallands livslängd konkurrerar med världens berömda Blå Zoner:",
+            "items": [
+              {"label": "Okinawa, Japan", "value": "Känt för längst levande kvinnor, ~84-86 år"},
+              {"label": "Sardinien, Italien", "value": "Exceptionell manlig livslängd, ~82+ år"},
+              {"label": "Ikaria, Grekland", "value": "8 år längre än US genomsnitt"},
+              {"label": "Nicoya, Costa Rica", "value": "20% lägre dödlighet än resten av Costa Rica"},
+              {"label": "Loma Linda, USA", "value": "7-10 år längre än US genomsnitt"}
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "icon": "flask",
+          "title": "Kulinariskt Forskningslabb",
+          "description": "Utforskar hur traditionella nordiska ingredienser och tillagningsmetoder bidrar till livslängd."
+        },
+        {
+          "icon": "user",
+          "title": "Personligt Välmående",
+          "description": "Individuella bedömningar och program anpassade efter genetiska profiler och livsstilsfaktorer."
+        },
+        {
+          "icon": "globe",
+          "title": "Naturupplevelser",
+          "description": "Program som utnyttjar Hallands naturlandskap för fysiskt och mentalt välbefinnande."
+        },
+        {
+          "icon": "shield",
+          "title": "Hälsoturism",
+          "description": "Engagerande upplevelser för besökare som vill lära sig och tillämpa Hallands principer för livslängd."
+        }
+      ],
+      "map": {
+        "image": "/images/longevity_option_2.webp",
+        "imageAlt": "Falkenberg Longevity Hub konceptbild",
+        "markers": [
+          {
+            "id": 1,
+            "top": "25%",
+            "left": "33%",
+            "label": "Livslängdsforskningscenter"
+          },
+          {
+            "id": 2,
+            "top": "50%",
+            "left": "66%",
+            "label": "Kulinariskt Innovationscentrum"
+          },
+          {
+            "id": 3,
+            "top": "66%",
+            "left": "25%",
+            "label": "Välmåendeturismcenter"
+          }
+        ],
+        "ctaText": "Utforska den interaktiva kartan i detalj",
+        "ctaLink": "#"
+      }
+    },
+    "foodNature": {
+      "title": "Halland, Sverige: Ett Dolt Kulinariskt Paradis",
+      "description": "Halland, på Sveriges västkust, stoltserar med en rik kulinarisk tradition inspirerad av sin varierande geografi – kustnära skaldjur, jordbruksprodukter och skogsbruk. Falkenberg utmärker sig som en dold pärla i regionen och erbjuder allt från avslappnade strandrestauranger till exklusiva restauranger med havsutsikt.",
+      "images": {
+        "coastal": "/images/455a4418_CMSTemplate.webp",
+        "cycling": "/images/culinary_option_1.webp"
+      },
+      "highlightQuote": "Hallands landskap – med sin kust, böljande kullar, skogar och fält – erbjuder ett skafferi av färska skaldjur, kvalitetskött, säsongens grönsaker och vilda delikatesser.",
+      "topProducers": {
+        "title": "Halländska Matproducenter",
+        "producers": [
+          {
+            "name": "Ugglarps Grönt",
+            "type": "Gårdsbutik med regenerativ odling",
+            "location": "Ugglarp, Halland",
+            "description": "Familjedriven gårdsbutik med regenerativ odling och unika, spårbara råvaror.",
+            "products": ["Färska frukter", "Säsongsbetonade grönsaker", "Ovanliga grönsaker"]
+          },
+          {
+            "name": "Gudmundsgården",
+            "type": "Gårdscharkuteri",
+            "location": "Slöinge, utanför Falkenberg",
+            "description": "Hallands äldsta gårdscharkuteri med Sveriges största sortiment av egentillverkade charkvaror.",
+            "products": ["Korvar", "Kött", "Charkprodukter"]
+          },
+          {
+            "name": "Hakaslätts Svamp",
+            "type": "Svampodling/champinjonodling",
+            "location": "Hakestad 132, Ullared",
+            "description": "Familjeägd svampodling i Ullared som kräver daglig omsorg.",
+            "products": ["Champinjoner", "Svampprodukter"]
+          }
+        ]
+      },
+      "foodExperience": {
+        "title": "Hallands Matupplevelse",
+        "introduction": "Det som gör Hallands matscen unik är inte bara kvaliteten på ingredienserna, utan de innovativa matproducenterna och engagemanget för tradition som skapar minnesvärda upplevelser:",
+        "advantages": [
+          {
+            "title": "Gård-till-bord Excellens",
+            "description": "Lokala råvaror från de böljande kullarna, sädesfälten och kusten i Halland skapar en välutrustad skafferi för restauranger."
+          },
+          {
+            "title": "Ekologisk och Regenerativ Odling",
+            "description": "Många lokala producenter använder ekologiska och regenerativa odlingsmetoder, vilket bidrar till både smak och miljömässig hållbarhet."
+          },
+          {
+            "title": "Havets Skafferi",
+            "description": "Kustlinjen erbjuder färsk fisk och skaldjur, allt från lokalt odlad och hållbar lax till nyrökt fisk och säsongens fångster."
+          },
+          {
+            "title": "Unika Besöksmål",
+            "description": "Från självplock av färska bär till gårdsbutiker med charkuterier och restauranger vid havet – Halland erbjuder matupplevelser för alla sinnen."
+          },
+          {
+            "title": "Säsongsfokus",
+            "description": "Restauranger och producenter betonar säsongsmenyer med ingredienser som odlas, plockas och jagas lokalt, vilket bidrar till hälsa och hållbarhet."
+          }
+        ],
+        "imageGallery": [
+          {
+            "src": "/images/culinary_option_2.jpg",
+            "alt": "Närbild av händer som håller"
+          },
+          {
+            "src": "/images/DSCF9537-e1699469643130.jpg",
+            "alt": "Närbild av händer som håller"
+          },
+          {
+            "src": "/images/DSCF9548-e1699469679535.jpg",
+            "alt": "Man i kostym som dricker kaffe"
+          },
+          {
+            "src": "/images/kattegattleden-cycling.jpg",
+            "alt": "Cykling i Halland"
+          }
+        ],
+        "badgeText": "1:a",
+        "ctaText": "Planera Din Kulinariska Tur",
+        "ctaLink": "#contact"
+      }
+    },
+    "news": {
+      "title": "Senaste Nyheter & Insikter",
+      "description": "Håll dig uppdaterad om de senaste utvecklingarna, forskningsresultaten och evenemangen relaterade till våra livslängdsinitiativ.",
+      "viewAllLink": "#",
+      "viewAllText": "Se alla nyheter",
+      "items": [
+        {
+          "id": 1,
+          "title": "Internationellt Livslängdssymposium Värd i Falkenberg",
+          "excerpt": "Världsberömda forskare och kulinariska experter samlas för att utforska korsningen mellan näring och livslängd.",
+          "imageUrl": "/images/1700175473082.jpeg",
+          "imageAlt": "Människor som deltar i det internationella livslängdssymposiet",
+          "date": "15 september 2023",
+          "category": "Evenemang"
+        },
+        {
+          "id": 2,
+          "title": "Ny Studie Bekräftar Hallands Exceptionella Livslängdsmått",
+          "excerpt": "Forskning publicerad i International Journal of Population Health validerar Hallands position som en global hotspot för livslängd.",
+          "imageUrl": "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+          "imageAlt": "Äldre människor som njuter av utomhusaktiviteter",
+          "date": "28 augusti 2023",
+          "category": "Forskning"
+        },
+        {
+          "id": 3,
+          "title": "Byggandet av Falkenberg Wellness Turismcenter Påbörjas",
+          "excerpt": "Den toppmoderna anläggningen kommer att välkomna hälsoinriktade besökare från hela världen med start nästa sommar.",
+          "imageUrl": "/images/Wakame-Seaweed-Salad_A.jpg",
+          "imageAlt": "Färska grönsaker och ingredienser för hälsosam matlagning",
+          "date": "10 augusti 2023",
+          "category": "Utveckling"
+        }
+      ],
+      "pagination": {
+        "currentPage": 2,
+        "totalPages": 3
+      }
+    },
+    "contact": {
+      "title": "Anslut Dig Till Halland Livslängdsrörelse",
+      "description": "Oavsett om du är intresserad av att besöka, investera, forska eller lära dig mer om våra initiativ, vill vi gärna komma i kontakt med dig.",
+      "contactInfo": {
+        "address": {
+          "label": "Besök Oss",
+          "value": "Falkenberg Longevity Hub<br>Strandvägen 45<br>311 37 Falkenberg, Sverige"
+        },
+        "email": {
+          "label": "Mejla Oss",
+          "value": "info@hallandlongevity.se<br>partnerships@hallandlongevity.se"
+        },
+        "phone": {
+          "label": "Ring Oss",
+          "value": "+46 346 88 61 00"
+        }
+      },
+      "form": {
+        "title": "Skicka Oss Ett Meddelande",
+        "fields": {
+          "firstName": {
+            "label": "Förnamn*",
+            "placeholder": "Ditt förnamn"
+          },
+          "lastName": {
+            "label": "Efternamn*",
+            "placeholder": "Ditt efternamn"
+          },
+          "email": {
+            "label": "E-postadress*",
+            "placeholder": "Din e-postadress"
+          },
+          "phone": {
+            "label": "Telefonnummer",
+            "placeholder": "Ditt telefonnummer"
+          },
+          "interest": {
+            "label": "Jag är intresserad av*",
+            "placeholder": "Vänligen välj...",
+            "options": [
+              {
+                "value": "visiting",
+                "label": "Besöka Longevity Hub"
+              },
+              {
+                "value": "investing",
+                "label": "Investeringsmöjligheter"
+              },
+              {
+                "value": "research",
+                "label": "Forskningssamarbete"
+              },
+              {
+                "value": "tourism",
+                "label": "Hälsoturismpaket"
+              },
+              {
+                "value": "other",
+                "label": "Annat"
+              }
+            ]
+          },
+          "message": {
+            "label": "Ditt Meddelande*",
+            "placeholder": "Vänligen berätta hur vi kan hjälpa dig"
+          },
+          "privacy": {
+            "label": "Jag godkänner <a href=\"#\" class=\"text-primary hover:text-secondary\">Integritetspolicyn</a> och samtycker till att bli kontaktad om Halland Longevity initiativ."
+          }
+        },
+        "submitButton": "Skicka Meddelande"
+      }
+    }
+  }
+}

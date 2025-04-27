@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { useLocation } from "wouter";
@@ -54,10 +55,13 @@ export function Navbar() {
         
         {/* Language Selector + CTA Button */}
         <div className="hidden lg:flex items-center space-x-6">
-          <div className="flex items-center space-x-2 text-white">
-            <span className="cursor-pointer hover:text-accent transition-colors duration-300">EN</span>
-            <span className="text-white/40">|</span>
-            <span className="cursor-pointer hover:text-accent transition-colors duration-300">SE</span>
+          <div className="flex items-center space-x-4 text-white">
+            <div className="flex items-center space-x-2">
+              <span className="cursor-pointer hover:text-accent transition-colors duration-300">EN</span>
+              <span className="text-white/40">|</span>
+              <span className="cursor-pointer hover:text-accent transition-colors duration-300">SE</span>
+            </div>
+            <ThemeToggle />
           </div>
           <a 
             href="#contact" 
@@ -126,10 +130,13 @@ export function Navbar() {
             Contact
           </a>
           
-          <div className="flex items-center space-x-2 text-white pt-2">
-            <span className="cursor-pointer hover:text-accent transition-colors duration-300">EN</span>
-            <span className="text-white/40">|</span>
-            <span className="cursor-pointer hover:text-accent transition-colors duration-300">SE</span>
+          <div className="flex items-center justify-between text-white pt-2">
+            <div className="flex items-center space-x-2">
+              <span className="cursor-pointer hover:text-accent transition-colors duration-300">EN</span>
+              <span className="text-white/40">|</span>
+              <span className="cursor-pointer hover:text-accent transition-colors duration-300">SE</span>
+            </div>
+            <ThemeToggle />
           </div>
           
           <a 
