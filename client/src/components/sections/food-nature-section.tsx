@@ -295,7 +295,7 @@ export function FoodNatureSection() {
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-md h-40">
                   <img 
-                    src="/public/images/matdagarna-22-113-2048x1365.jpg" 
+                    src="/images/matdagarna-22-113-2048x1365.jpg" 
                     alt="Close up of hands holding" 
                     className="w-full h-full object-cover"
                   />
